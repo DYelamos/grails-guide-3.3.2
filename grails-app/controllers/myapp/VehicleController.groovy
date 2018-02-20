@@ -12,7 +12,7 @@ class VehicleController {
 
     static allowedMethods = [save: 'POST', update: 'PUT', delete: 'DELETE']
 
-    def valueEstimateService //<1>
+    def valueEstimateService
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
